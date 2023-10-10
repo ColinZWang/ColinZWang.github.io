@@ -1,0 +1,94 @@
+.big-box {
+    border: 2px white;
+    padding: 20px;
+    width: 1000px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.big-box h1{
+    font-family: 'Valencia', sans-serif;                
+}
+.ebay-logo {
+    display: inline-block;
+}
+#eBayLogo{
+    width: 200px;
+}
+.header {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.small-box {
+    border: 2px solid black;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.row {
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+.red-star {
+    color: red;
+}
+select[name="sort"] {
+    text-align-last: center;
+    text-align: center;
+}
+.result-item {
+    align-items: center;
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    max-width: 70%;              /* slightly wider than the big box */
+    margin-left: auto;           /* centering the box */
+    margin-right: auto;
+}
+
+
+.result-image {
+    width: 120px;
+    height: 120px;               /* height of the image */
+    object-fit: cover; 
+    margin-left: 50px;
+    margin-right: 20px;          
+}
+
+.result-details {
+    display: flex;
+    flex-direction: column;      /* items in a column */
+    justify-content: center;     /* center items vertically */
+}
+
+.result-details h2,            /* name and price in bold */
+.result-details .price {
+    font-weight: bold;
+}
+
+
+button {
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+table {
+    border: 1px solid grey;
+    max-width: 70%;
+    margin: 50px auto;
+}
+
+table td {
+    padding: 8px;
+}

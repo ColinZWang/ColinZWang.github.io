@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay Search Form</title>
+    <!-- Adjusted CSS path -->
+    <link rel="stylesheet" href="../static/home.css">
+</head>
+
+
+<body>
+    <div class="big-box">
+        <a href="https://www.ebay.com" class="ebay-logo">
+            <img id="eBayLogo" src="../static/images/eBayLogo.png" alt="eBay Logo">
+        </a>
+        <h1 class="header">Shopping</h1>
+
+        <div class="small-box">
+            <div class="row">
+                <b>Keywords</b><span class="red-star">*</span><b>:</b>
+                <input type="text" name="keyword">
+            </div>
+            <div class="row">
+                <b>Price Range:</b> From &nbsp;&nbsp;&nbsp;<input type="text" size=5 name="price-from">&nbsp;&nbsp;
+                to &nbsp;&nbsp;&nbsp;<input type="text" size=5 name="price-to">
+            </div>
+            <div class="row">
+                <b>Condition</b>:
+                <input type="checkbox" name="condition" value="New"> New
+                <input type="checkbox" name="condition" value="Used"> Used
+                <input type="checkbox" name="condition" value="Very Good"> Very Good
+                <input type="checkbox" name="condition" value="Good"> Good
+                <input type="checkbox" name="condition" value="Acceptable"> Acceptable
+            </div>
+            <div class="row">
+                <b>Seller : </b> <input type="checkbox" id="returnsAccepted" value="Return Accepted"> Return Accepted
+            </div>
+            <div class="row">
+                <b>Shipping</b>:
+                <input type="checkbox" id="freeShipping" value="Free"> Free
+                <input type="checkbox" id="expeditedShipping" value="Expedited"> Expedited
+            </div>
+            <div class="row">
+                <b>Sort by : </b>
+                <select id="sortOrder">
+                    <option value="best_match">Best Match</option>
+                    <option value="price_high">Price(highest first)</option>
+                    <option value="price_ship_high">Price + shipping(highest first)</option>
+                    <option value="price_ship_low">Price + shipping(lowest first)</option>
+                </select>
+            </div>
+            <div class="row">
+                <button type="reset">Clear</button>
+                <button type="button" onclick="performSearch()">Search</button>
+            </div>
+        </div>
+    </div>
+    <div id="resultsContainer"></div>
+    <script src="../static/main.js"></script>
+</body>
+
+</html>
